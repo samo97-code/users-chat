@@ -1,0 +1,154 @@
+.message-wrapper{
+  display: flex;
+  width: 100%;
+
+  .message-item{
+    max-width: 446px;
+    width: 100%;
+    margin-bottom: 15px;
+
+    .message-block{
+      display: flex;
+
+      .image-side{
+        margin-right: 9px;
+        display: flex;
+        align-items: flex-start;
+
+
+        .svg{
+          display: flex;
+          align-items: flex-end;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+
+          img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+        }
+      }
+
+      .position-right-image{
+        order: 1;
+        margin-right: 0;
+        margin-left: 16px;
+      }
+
+      .message-side{
+        position: relative;
+        padding: 9px 20px;
+        width: 100%;
+        max-width: 500px;
+        background: white;
+        box-shadow: 0 0 4px rgba(246, 128, 89, 0.15);
+        border-radius: 0 10px 10px 10px;
+
+        @media (max-width: 900px) {
+          max-width: 250px;
+        }
+
+        &__me{
+         background: #FFE4C9;
+        }
+
+        &::before{
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 0;
+          bottom: 0;
+        }
+
+        .username{
+          margin-top: 0;
+          margin-bottom: 9px;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 13px;
+          color: #7C42FF;
+        }
+
+        .message-slider{
+          margin-bottom: 10px;
+        }
+
+        &__me{
+          border-radius: 10px 0 10px 10px;
+
+        }
+        .content{
+
+          .content-item{
+            width: 100%;
+            word-break: break-all;
+          }
+
+          .message{
+            width: 95%;
+            margin: 0;
+            font-size: 17px;
+            line-height: 20px;
+            color: #162521;
+          }
+
+          .date{
+            line-height: 12px;
+            color: #979797;
+            text-align: right;
+            display: block;
+          }
+        }
+
+        .has-media{
+          display: block;
+          position: relative;
+
+          .date{
+            position: absolute;
+            bottom: 13px;
+            right: 9px;
+            color: #fff;
+          }
+          video{
+            width: 100%;
+          }
+        }
+
+        &__left{
+
+          &::before{
+            border-left: 8px solid transparent;
+            left: -7px;
+          }
+        }
+        &__right{
+
+          &::before{
+            border-right: 8px solid transparent;
+            right: -7px;
+          }
+        }
+      }
+
+    }
+
+    .position-right-date{
+      justify-content: flex-start;
+    }
+
+  }
+
+  .custom-width{
+    max-width: fit-content !important;
+  }
+}
+
+.position-right-wrapper{
+  justify-content: flex-end;
+}
+

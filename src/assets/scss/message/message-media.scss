@@ -1,0 +1,50 @@
+.message-media-list-wrapper {
+  .images-list {
+    margin: 0;
+    padding: 0;
+    display: block;
+    max-width: 100%;
+    li {
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      margin-bottom: 4px;
+      position: relative;
+
+      .media-wrapper {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        margin-right: 5px;
+        img,
+        video {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .filename {
+        display: inline-block;
+        width: calc(100% - 110px);
+        white-space: nowrap;
+        font-size: 14px;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .remove-icon {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        background: transparent url("/../../img/close-user-list.svg") 50% 50%
+        no-repeat;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        cursor: pointer;
+        z-index: 999;
+        background-size: cover;
+      }
+    }
+  }
+}

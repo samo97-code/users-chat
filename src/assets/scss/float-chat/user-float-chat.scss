@@ -1,0 +1,68 @@
+.user-float-chat {
+  filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.25));
+  border-radius: 12px 12px 0 0;
+  //background: url("/../..img/backgroundfloat.svg");
+  //background: linear-gradient(0, #ffa45e 25.5%, rgba(246, 168, 108, 0.91) 45.5%, #F5F4F5 70.49%);
+  background-size: cover;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 310px;
+  height: 493px;
+
+  .banner-image{
+    position: absolute;
+  }
+
+  .content{
+    position: relative;
+    padding: 20px 16px;
+
+    .header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 19px;
+
+      .name{
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 17px;
+      }
+
+      .close-btn{
+        background: transparent;
+        border: none;
+        padding: 0;
+      }
+    }
+
+    .search{
+      display: flex;
+      align-items: center;
+
+      .label{
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 17px;
+      }
+      .input-block{
+        margin-left: 11px;
+        width: 100%;
+
+        input{
+          width: 94%;
+          border: none;
+          background: transparent;
+          height: 25px;
+          font-size: 1rem;
+
+          &:focus-visible{
+            outline: none;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}

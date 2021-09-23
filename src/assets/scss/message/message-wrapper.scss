@@ -1,0 +1,55 @@
+.messages-wrapper{
+  display: flex;
+  position: relative;
+
+  @media (max-width: 767px) {
+    overflow-y: hidden;
+  }
+
+  .banner-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    object-fit: cover;
+    left: 0;
+  }
+
+  .left-sidebar{
+    min-width: 420px;
+    height: 100vh;
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+
+    @media (max-width: 421px) {
+      min-width: 100%;
+    }
+  }
+
+  .user-left{
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  .content{
+    width: 100%;
+    margin-left: 1px;
+    position: relative;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  .user-content{
+    position: relative;
+
+    @media (max-width: 767px) {
+      display: block;
+      margin-left: 0;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.message-content{
+  position: relative;
+  height: calc(100vh - 172px);
+  overflow-y: scroll;
+
+  @media (max-width: 767px) {
+    height: calc(100vh - 126px);
+  }
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+    border-radius: 8px;
+  }
+
+  .message-lists{
+    padding: 16px;
+  }
+}
+
+.correct-height-one{
+  height: calc(100vh - 226px);
+
+  @media (max-width: 767px) {
+    height: calc(100vh - 180px)
+  }
+}
+.correct-height-two{
+  height: calc(100vh - 247px);
+
+  @media (max-width: 767px) {
+    height: calc(100vh - 201px)
+  }
+}
+
+.checkers {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background: transparent url("/../img/orange-read.svg") 50% 50%
+  no-repeat;
+  display: block;
+  width: 19px;
+  height: 10px;
+  z-index: 10;
+  filter: grayscale(1);
+  &.is-read {
+    filter: none;
+  }
+}

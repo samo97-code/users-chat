@@ -1,0 +1,50 @@
+.message-files-list-wrapper {
+  ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+    max-width: 100%;
+    li {
+      white-space: nowrap;
+      font-size: 14px;
+      margin-bottom: 10px;
+      position: relative;
+      height: 44px;
+      align-items: center;
+      display: flex;
+
+      .filename {
+        white-space: nowrap;
+        font-size: 14px;
+        max-width: calc(100% - 50px);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      &:before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background: url("/../../img/attachments.svg") 50% 50% no-repeat;
+        background-size: contain;
+        display: inline-block;
+        margin-right: 5px;
+        vertical-align: middle;
+      }
+      .remove-icon {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        background: transparent url("/../../img/close-user-list.svg") 50% 50%
+        no-repeat;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        cursor: pointer;
+        z-index: 999;
+        background-size: cover;
+      }
+    }
+  }
+}
